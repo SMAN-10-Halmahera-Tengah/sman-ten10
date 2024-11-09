@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Observasi Pimpinan SMAN 10 Halmahera Tengah</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 30px;
+        }
+        .checklist {
+            list-style-type: none;
+            padding: 0;
+        }
+        .checklist li {
+            background-color: #ecf0f1;
+            margin-bottom: 10px;
+            padding: 15px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            transition: background-color 0.3s ease;
+        }
+        .checklist li:hover {
+            background-color: #d5dbdb;
+        }
+        .checklist input[type="checkbox"] {
+            margin-right: 15px;
+            transform: scale(1.5);
+        }
+        .checklist label {
+            flex: 1;
+            font-size: 16px;
+            color: #34495e;
+            cursor: pointer;
+        }
+        .checklist input[type="checkbox"]:checked + label {
+            text-decoration: line-through;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Observasi Pimpinan SMAN 10 Halmahera Tengah</h1>
+        <ul class="checklist">
+            <li>
+                <input type="checkbox" id="item1">
+                <label for="item1">Mengecek kehadiran guru dan staf</label>
+            </li>
+            <li>
+                <input type="checkbox" id="item2">
+                <label for="item2">Memantau proses belajar mengajar di kelas</label>
+            </li>
+            <li>
+                <input type="checkbox" id="item3">
+                <label for="item3">Memeriksa kebersihan lingkungan sekolah</label>
+            </li>
+            <li>
+                <input type="checkbox" id="item4">
+                <label for="item4">Mengevaluasi program ekstrakurikuler</label>
+            </li>
+            <li>
+                <input type="checkbox" id="item5">
+                <label for="item5">Mengadakan rapat dengan staf pengajar</label>
+            </li>
+            <li>
+                <input type="checkbox" id="item6">
+                <label for="item6">Memeriksa fasilitas dan sarana prasarana</label>
+            </li>
+            <li>
+                <input type="checkbox" id="item7">
+                <label for="item7">Meninjau perkembangan siswa berprestasi</label>
+            </li>
+            <li>
+                <input type="checkbox" id="item8">
+                <label for="item8">Menganalisis laporan keuangan sekolah</label>
+            </li>
+            <li>
+                <input type="checkbox" id="item9">
+                <label for="item9">Melakukan koordinasi dengan komite sekolah</label>
+            </li>
+            <li>
+                <input type="checkbox" id="item10">
+                <label for="item10">Mengevaluasi kurikulum dan metode pengajaran</label>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

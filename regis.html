@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran Siswa Baru - SMAN 10 Halmahera Tengah</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 2rem;
+        }
+
+        form {
+            display: grid;
+            gap: 1rem;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: #34495e;
+        }
+
+        input, select, textarea {
+            padding: 0.5rem;
+            border: 1px solid #bdc3c7;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        input[type="submit"] {
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            padding: 1rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #2980b9;
+        }
+
+        .required::after {
+            content: " *";
+            color: #e74c3c;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Formulir Pendaftaran Siswa Baru</h1>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="nama" class="required">Nama Lengkap</label>
+                <input type="text" id="nama" name="nama" required>
+            </div>
+
+            <div class="form-group">
+                <label for="tanggal_lahir" class="required">Tanggal Lahir</label>
+                <input type="date" id="tanggal_lahir" name="tanggal_lahir" required>
+            </div>
+
+            <div class="form-group">
+                <label for="jenis_kelamin" class="required">Jenis Kelamin</label>
+                <select id="jenis_kelamin" name="jenis_kelamin" required>
+                    <option value="">Pilih Jenis Kelamin</option>
+                    <option value="laki-laki">Laki-laki</option>
+                    <option value="perempuan">Perempuan</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="alamat" class="required">Alamat</label>
+                <textarea id="alamat" name="alamat" rows="3" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="no_telp" class="required">Nomor Telepon</label>
+                <input type="tel" id="no_telp" name="no_telp" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+            </div>
+
+            <div class="form-group">
+                <label for="asal_sekolah" class="required">Asal Sekolah</label>
+                <input type="text" id="asal_sekolah" name="asal_sekolah" required>
+            </div>
+
+            <div class="form-group">
+                <label for="nilai_un">Nilai Ujian Nasional</label>
+                <input type="number" id="nilai_un" name="nilai_un" min="0" max="100" step="0.01">
+            </div>
+
+            <div class="form-group">
+                <label for="jurusan">Jurusan yang Diminati</label>
+                <select id="jurusan" name="jurusan">
+                    <option value="">Pilih Jurusan</option>
+                    <option value="ipa">IPA</option>
+                    <option value="ips">IPS</option>
+                    <option value="bahasa">Bahasa</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="orangtua" class="required">Nama Orang Tua/Wali</label>
+                <input type="text" id="orangtua" name="orangtua" required>
+            </div>
+
+            <input type="submit" value="Daftar">
+        </form>
+    </div>
+</body>
+</html>
